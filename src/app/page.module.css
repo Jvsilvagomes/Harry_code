@@ -1,0 +1,98 @@
+.container {
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 1.5rem;
+    background-image:
+        linear-gradient(to bottom, rgba(10, 15, 30, 0.35), rgba(10, 15, 30, 0.5)),
+        url('https://minio.codeverse.dev.br/mural/1785506074998-36fiuq.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        sans-serif;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15rem 0 0 0;
+}
+
+.title {
+    margin: 0;
+    background: linear-gradient(135deg, #a5b4fc 0%, #38bdf8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    margin-top: 0.25rem;
+    color: #cbd5e1;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    border-radius: 999px;
+    padding: 0.85rem 2.25rem;
+    background: linear-gradient(135deg, #a5b4fc 0%, #38bdf8 100%);
+    color: #0a0f1e;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.cta:hover {
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.35);
+    transform: translateY(-2px);
+}
+
+.ctaIcon {
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.tagline {
+    margin-top: 1rem;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.footer {
+    color: rgba(148, 163, 184, 0.6);
+    font-size: 0.85rem;
+}
