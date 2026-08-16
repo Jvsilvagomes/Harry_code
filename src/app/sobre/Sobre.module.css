@@ -1,9 +1,10 @@
 .container {
-    max-width: 42rem;
     margin-left: auto;
     margin-right: auto;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    background-color: #080d18;
+    min-height: 100vh;
   }
   
   .container > * + * {
@@ -16,6 +17,7 @@
     color: #fbbf24;
     border-bottom: 1px solid rgba(245, 158, 11, 0.3);
     padding-bottom: 0.75rem;
+    text-align: center;
   }
   
   .card {
@@ -23,6 +25,10 @@
     border: 1px solid #1e293b;
     padding: 1.5rem;
     border-radius: 0.75rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color:  #cbd5e1;
   }
   
   .cardEspacado > * + * {
