@@ -5,6 +5,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import CharacterCard from '../components/CharacterCard';
 import CharacterModal from '../components/CharacterModal';
+import styles from './Personagens.module.css';
 
 export default function Personagens() {
   const [characters, setCharacters] = useState([]);
@@ -42,14 +43,14 @@ export default function Personagens() {
     }
   };
 
-  if (loading) return <div className="text-center py-20 text-amber-400 font-bold text-xl">Carregando feitiços e bruxos...</div>;
-  if (error) return <div className="text-center py-20 text-red-500 font-bold text-xl">{error}</div>;
+  if (loading) return <div className={styles.loading}>Carregando feitiços e bruxos...</div>;
+  if (error) return <div className={styles.error}>{error}</div>;
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-amber-400 mb-6 text-center">Personagens do Universo</h1>
+    <div className={styles.espacamentoGeral}>
+      <h1 className={styles.titulo}>Personagens do Universo</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className={styles.grid}>
         {characters.map((char) => (
           <CharacterCard
             key={char.id || char.name}
