@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import CharacterCard from '../components/CharacterCard';
-import CharacterModal from '../components/CharacterModal';
+import CharacterCard from '@/components/CharacterCard';
+import CharacterModal from '@/components/CharacterModal';
 import styles from './Personagens.module.css';
 
 export default function Personagens() {
@@ -47,25 +47,27 @@ export default function Personagens() {
   if (error) return <div className={styles.error}>{error}</div>;
 
   return (
-    <div className={styles.espacamentoGeral}>
-      <h1 className={styles.titulo}>Personagens do Universo</h1>
+    <div className={styles.container}>
+      <div className={styles.espacamentoGeral}>
+        <h1 className={styles.titulo}>Personagens do Universo</h1>
 
-      <div className={styles.grid}>
-        {characters.map((char) => (
-          <CharacterCard
-            key={char.id || char.name}
-            character={char}
-            isFavorite={favorites.some((fav) => fav.id === char.id)}
-            onToggleFavorite={toggleFavorite}
-            onClick={() => setSelectedCharacter(char)}
-          />
-        ))}
+        <div className={styles.grid}>
+          {characters.map((char) => (
+            <CharacterCard
+              key={char.id || char.name}
+              character={char}
+              isFavorite={favorites.some((fav) => fav.id === char.id)}
+              onToggleFavorite={toggleFavorite}
+              onClick={() => setSelectedCharacter(char)}
+            />
+          ))}
+        </div>
+
+        <CharacterModal
+          character={selectedCharacter}
+          onClose={() => setSelectedCharacter(null)}
+        />
       </div>
-
-      <CharacterModal
-        character={selectedCharacter}
-        onClose={() => setSelectedCharacter(null)}
-      />
     </div>
   );
 }

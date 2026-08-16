@@ -1,53 +1,61 @@
+.container {
+    background-color: #080d18;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    min-height: 100vh;
+}
+
 .titulo {
     font-size: 1.875rem;
     font-weight: 700;
     color: #fbbf24;
     margin-bottom: 1.5rem;
     text-align: center;
-  }
-  
-  .grid {
+    margin-top: 0;
+}
+
+.grid {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 1.5rem;
-  }
-  
-  .loading {
+}
+
+.loading {
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
     color: #fbbf24;
     font-weight: 700;
     font-size: 1.25rem;
-  }
-  
-  .error {
+}
+
+.error {
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
     color: #ef4444;
     font-weight: 700;
     font-size: 1.25rem;
-  }
-  
-  .espacamentoGeral > * + * {
+}
+
+.espacamentoGeral>*+* {
     margin-top: 1.5rem;
-  }
-  
-  @media (min-width: 640px) {
+}
+
+@media (min-width: 640px) {
     .grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-  }
-  
-  @media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
     .grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
-  }
+}

@@ -1,23 +1,25 @@
-import Link from "next/link";
-import Image from "next/image";
-import styles from "./not-found.module.css";
+import Link from 'next/link';
+import styles from './not-found.module.css';
 
 export default function NotFound() {
   return (
-    <main className={styles.container}>
-      <div className={styles.card}>
-        <div className={styles.cardContent}>
-          <div className={styles.badge}>Erro 404</div>
-          <h1 className={styles.title}>Página não encontrada</h1>
-          <p className={styles.description}>
-            Ops! A página que você está procurando não existe, foi removida ou mudou de endereço.
-          </p>
+    <div className={styles.container}>
+      <div className={styles.content}>
+        <span className={styles.badge}>Erro 404</span>
+        <h1 className={styles.title}>404</h1>
+        
+        <h2 className={styles.subtitle}>Página não encontrada</h2>
 
+        <p className={styles.description}>
+          Vish! A página que você está procurando não existe, foi movida ou está temporariamente indisponível.
+        </p>
+
+        <div className={styles.actions}>
           <Link href="/" className={styles.button}>
-            Voltar para a Home
+            Voltar para o início
           </Link>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
