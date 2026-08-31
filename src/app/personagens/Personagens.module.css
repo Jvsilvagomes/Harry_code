@@ -38,6 +38,24 @@
     font-size: 1.25rem;
 }
 
+.tituloFavoritos {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fbbf24;
+  text-align: center;
+}
+
+.emptyState {
+  text-align: center;
+  color: #9ca3af;
+}
+
+.divisor {
+  border: 0;
+  border-top: 1px solid #1f2937;
+  margin: 2rem 0;
+}
+
 .espacamentoGeral>*+* {
     margin-top: 1.5rem;
 }
