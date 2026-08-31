@@ -1,7 +1,7 @@
 import styles from './Sobre.module.css';
 
 export default function Sobre() {
-  const grupo = ['Rafael', 'João Victor'];
+  const grupo = ['Rafael', 'João Victor', 'Fabio Trevizolli'];
 
   return (
     <div className={styles.container}>
