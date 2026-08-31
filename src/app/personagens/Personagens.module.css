@@ -1,14 +1,15 @@
 .container {
-    background-color: #080d18;
+    background-color: var(--bg);
     padding-top: 2rem;
     padding-bottom: 2rem;
     min-height: 100vh;
+    color: var(--text);
 }
 
 .titulo {
     font-size: 1.875rem;
     font-weight: 700;
-    color: #fbbf24;
+    color: var(--accent);
     margin-bottom: 1.5rem;
     text-align: center;
     margin-top: 0;
@@ -24,7 +25,7 @@
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    color: #fbbf24;
+    color: var(--accent);
     font-weight: 700;
     font-size: 1.25rem;
 }
@@ -41,18 +42,18 @@
 .tituloFavoritos {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fbbf24;
+  color: var(--accent);
   text-align: center;
 }
 
 .emptyState {
   text-align: center;
-  color: #9ca3af;
+  color: var(--text-muted);
 }
 
 .divisor {
   border: 0;
-  border-top: 1px solid #1f2937;
+  border-top: 1px solid var(--border);
   margin: 2rem 0;
 }
 

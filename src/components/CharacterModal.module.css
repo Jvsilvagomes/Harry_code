@@ -15,14 +15,14 @@
 
 /* Container do Modal */
 .modalContent {
-  background-color: #0f172a;
-  border: 1px solid rgba(245, 158, 11, 0.4);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
   border-radius: 1rem;
   padding: 1.5rem;
   max-width: 28rem;
   width: 100%;
   position: relative;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 25px 50px -12px var(--shadow);
   animation: fadeIn 0.2s ease-out;
 }
 
@@ -44,9 +44,9 @@
   right: 1rem;
   padding: 0.25rem;
   border-radius: 9999px;
-  background-color: #1e293b;
+  background-color: var(--bg-card-soft);
   border: none;
-  color: #cbd5e1;
+  color: var(--text-muted);
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
   display: flex;
@@ -55,8 +55,8 @@
 }
 
 .closeButton:hover {
-  background-color: #334155;
-  color: #ffffff;
+  background-color: var(--favorite-button-hover);
+  color: var(--text-strong);
 }
 
 .closeIcon {
@@ -79,7 +79,7 @@
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   overflow: hidden;
-  border: 1px solid rgba(251, 191, 36, 0.5);
+  border: 1px solid var(--border);
 }
 
 .characterImage {
@@ -89,14 +89,14 @@
 .characterName {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fbbf24;
+  color: var(--accent);
   margin-top: 0;
   margin-bottom: 0.25rem;
 }
 
 .houseBadge {
   background-color: rgba(245, 158, 11, 0.2);
-  color: #fcd34d;
+  color: var(--accent-strong);
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
   font-size: 0.75rem;
@@ -113,8 +113,8 @@
   gap: 0.5rem;
   text-align: left;
   font-size: 0.875rem;
-  color: #cbd5e1;
-  border-top: 1px solid #1e293b;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
   padding-top: 1rem;
 }
 

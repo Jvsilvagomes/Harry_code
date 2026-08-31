@@ -1,21 +1,24 @@
-import { ToastContainer } from "react-toastify";
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../components/navbar';
 import './globals.css';
 
 export const metadata = {
-    title: 'WizzardDex',
-    descripition: 'Enciclopédia dos Bruxos'
+  title: 'WizardDex',
+  description: 'Enciclopédia dos bruxos de Hogwarts',
+  icons: {
+    icon: '/images/logo-wizardDex.png',
+  },
 };
 
-export default function RootLayout({ children }){
-    return (
-        <html lang="pt-BR">
-            <body className="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans">
-                    <Navbar />
-                    <main className="flex-1 container mx-auto p-6">{children}</main>
-                    <ToastContainer position="bottom-right" theme="dark"/>
-            </body>
-        </html>
-    );
+export default function RootLayout({ children }) {
+  return (
+    <html lang="pt-BR">
+      <body>
+        <Navbar />
+        <main>{children}</main>
+        <ToastContainer position="bottom-right" theme="dark" />
+      </body>
+    </html>
+  );
 }

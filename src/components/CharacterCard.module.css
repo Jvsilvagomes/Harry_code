@@ -10,6 +10,7 @@
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
+  background-color: var(--bg-card);
 }
 
 .card:hover {
@@ -18,7 +19,7 @@
 
 .defaultHouse {
   border-color: #334155;
-  background-color: #0f172a;
+  background-color: var(--bg-card-soft);
 }
 
 .gryffindor {
@@ -46,7 +47,7 @@
   top: 0.75rem;
   right: 0.75rem;
   padding: 0.5rem;
-  background-color: rgba(15, 23, 42, 0.8);
+  background-color: var(--favorite-button);
   border-radius: 9999px;
   border: none;
   cursor: pointer;
@@ -55,7 +56,7 @@
 }
 
 .favoriteButton:hover {
-  background-color: #1e293b;
+  background-color: var(--favorite-button-hover);
 }
 
 .heartIcon {
@@ -86,7 +87,7 @@
   margin-bottom: 0.75rem;
   border-radius: 0.5rem;
   overflow: hidden;
-  background-color: #1e293b;
+  background-color: var(--bg-card-soft);
 }
 
 .characterImage {
@@ -96,14 +97,14 @@
 .characterName {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #fcd34d;
+  color: var(--accent-strong);
   text-align: center;
   margin: 0;
 }
 
 .characterHouse {
   font-size: 0.875rem;
-  color: #cbd5e1;
+  color: var(--text-muted);
   margin: 0;
 }
 
